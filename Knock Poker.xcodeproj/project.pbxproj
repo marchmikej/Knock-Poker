@@ -1,0 +1,547 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8594A15C1EAB6E9400E5A87C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8594A15B1EAB6E9400E5A87C /* AppDelegate.swift */; };
+		8594A15E1EAB6E9400E5A87C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8594A15D1EAB6E9400E5A87C /* ViewController.swift */; };
+		8594A1611EAB6E9400E5A87C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8594A15F1EAB6E9400E5A87C /* Main.storyboard */; };
+		8594A1641EAB6E9400E5A87C /* Knock_Poker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8594A1621EAB6E9400E5A87C /* Knock_Poker.xcdatamodeld */; };
+		8594A1661EAB6E9400E5A87C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8594A1651EAB6E9400E5A87C /* Assets.xcassets */; };
+		8594A1691EAB6E9400E5A87C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8594A1671EAB6E9400E5A87C /* LaunchScreen.storyboard */; };
+		8594A1741EAB6E9400E5A87C /* Knock_PokerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8594A1731EAB6E9400E5A87C /* Knock_PokerTests.swift */; };
+		8594A17F1EAB6E9400E5A87C /* Knock_PokerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8594A17E1EAB6E9400E5A87C /* Knock_PokerUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8594A1701EAB6E9400E5A87C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8594A1501EAB6E9400E5A87C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8594A1571EAB6E9400E5A87C;
+			remoteInfo = "Knock Poker";
+		};
+		8594A17B1EAB6E9400E5A87C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8594A1501EAB6E9400E5A87C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8594A1571EAB6E9400E5A87C;
+			remoteInfo = "Knock Poker";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8594A1581EAB6E9400E5A87C /* Knock Poker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Knock Poker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8594A15B1EAB6E9400E5A87C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8594A15D1EAB6E9400E5A87C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8594A1601EAB6E9400E5A87C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8594A1631EAB6E9400E5A87C /* Knock_Poker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Knock_Poker.xcdatamodel; sourceTree = "<group>"; };
+		8594A1651EAB6E9400E5A87C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8594A1681EAB6E9400E5A87C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8594A16A1EAB6E9400E5A87C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8594A16F1EAB6E9400E5A87C /* Knock PokerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Knock PokerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8594A1731EAB6E9400E5A87C /* Knock_PokerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Knock_PokerTests.swift; sourceTree = "<group>"; };
+		8594A1751EAB6E9400E5A87C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8594A17A1EAB6E9400E5A87C /* Knock PokerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Knock PokerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8594A17E1EAB6E9400E5A87C /* Knock_PokerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Knock_PokerUITests.swift; sourceTree = "<group>"; };
+		8594A1801EAB6E9400E5A87C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8594A1551EAB6E9400E5A87C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8594A16C1EAB6E9400E5A87C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8594A1771EAB6E9400E5A87C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8594A14F1EAB6E9400E5A87C = {
+			isa = PBXGroup;
+			children = (
+				8594A15A1EAB6E9400E5A87C /* Knock Poker */,
+				8594A1721EAB6E9400E5A87C /* Knock PokerTests */,
+				8594A17D1EAB6E9400E5A87C /* Knock PokerUITests */,
+				8594A1591EAB6E9400E5A87C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8594A1591EAB6E9400E5A87C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8594A1581EAB6E9400E5A87C /* Knock Poker.app */,
+				8594A16F1EAB6E9400E5A87C /* Knock PokerTests.xctest */,
+				8594A17A1EAB6E9400E5A87C /* Knock PokerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8594A15A1EAB6E9400E5A87C /* Knock Poker */ = {
+			isa = PBXGroup;
+			children = (
+				8594A15B1EAB6E9400E5A87C /* AppDelegate.swift */,
+				8594A15D1EAB6E9400E5A87C /* ViewController.swift */,
+				8594A15F1EAB6E9400E5A87C /* Main.storyboard */,
+				8594A1651EAB6E9400E5A87C /* Assets.xcassets */,
+				8594A1671EAB6E9400E5A87C /* LaunchScreen.storyboard */,
+				8594A16A1EAB6E9400E5A87C /* Info.plist */,
+				8594A1621EAB6E9400E5A87C /* Knock_Poker.xcdatamodeld */,
+			);
+			path = "Knock Poker";
+			sourceTree = "<group>";
+		};
+		8594A1721EAB6E9400E5A87C /* Knock PokerTests */ = {
+			isa = PBXGroup;
+			children = (
+				8594A1731EAB6E9400E5A87C /* Knock_PokerTests.swift */,
+				8594A1751EAB6E9400E5A87C /* Info.plist */,
+			);
+			path = "Knock PokerTests";
+			sourceTree = "<group>";
+		};
+		8594A17D1EAB6E9400E5A87C /* Knock PokerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8594A17E1EAB6E9400E5A87C /* Knock_PokerUITests.swift */,
+				8594A1801EAB6E9400E5A87C /* Info.plist */,
+			);
+			path = "Knock PokerUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8594A1571EAB6E9400E5A87C /* Knock Poker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8594A1831EAB6E9400E5A87C /* Build configuration list for PBXNativeTarget "Knock Poker" */;
+			buildPhases = (
+				8594A1541EAB6E9400E5A87C /* Sources */,
+				8594A1551EAB6E9400E5A87C /* Frameworks */,
+				8594A1561EAB6E9400E5A87C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Knock Poker";
+			productName = "Knock Poker";
+			productReference = 8594A1581EAB6E9400E5A87C /* Knock Poker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8594A16E1EAB6E9400E5A87C /* Knock PokerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8594A1861EAB6E9400E5A87C /* Build configuration list for PBXNativeTarget "Knock PokerTests" */;
+			buildPhases = (
+				8594A16B1EAB6E9400E5A87C /* Sources */,
+				8594A16C1EAB6E9400E5A87C /* Frameworks */,
+				8594A16D1EAB6E9400E5A87C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8594A1711EAB6E9400E5A87C /* PBXTargetDependency */,
+			);
+			name = "Knock PokerTests";
+			productName = "Knock PokerTests";
+			productReference = 8594A16F1EAB6E9400E5A87C /* Knock PokerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8594A1791EAB6E9400E5A87C /* Knock PokerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8594A1891EAB6E9400E5A87C /* Build configuration list for PBXNativeTarget "Knock PokerUITests" */;
+			buildPhases = (
+				8594A1761EAB6E9400E5A87C /* Sources */,
+				8594A1771EAB6E9400E5A87C /* Frameworks */,
+				8594A1781EAB6E9400E5A87C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8594A17C1EAB6E9400E5A87C /* PBXTargetDependency */,
+			);
+			name = "Knock PokerUITests";
+			productName = "Knock PokerUITests";
+			productReference = 8594A17A1EAB6E9400E5A87C /* Knock PokerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8594A1501EAB6E9400E5A87C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Michael March";
+				TargetAttributes = {
+					8594A1571EAB6E9400E5A87C = {
+						CreatedOnToolsVersion = 8.3.1;
+						ProvisioningStyle = Automatic;
+					};
+					8594A16E1EAB6E9400E5A87C = {
+						CreatedOnToolsVersion = 8.3.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 8594A1571EAB6E9400E5A87C;
+					};
+					8594A1791EAB6E9400E5A87C = {
+						CreatedOnToolsVersion = 8.3.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 8594A1571EAB6E9400E5A87C;
+					};
+				};
+			};
+			buildConfigurationList = 8594A1531EAB6E9400E5A87C /* Build configuration list for PBXProject "Knock Poker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8594A14F1EAB6E9400E5A87C;
+			productRefGroup = 8594A1591EAB6E9400E5A87C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8594A1571EAB6E9400E5A87C /* Knock Poker */,
+				8594A16E1EAB6E9400E5A87C /* Knock PokerTests */,
+				8594A1791EAB6E9400E5A87C /* Knock PokerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8594A1561EAB6E9400E5A87C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8594A1691EAB6E9400E5A87C /* LaunchScreen.storyboard in Resources */,
+				8594A1661EAB6E9400E5A87C /* Assets.xcassets in Resources */,
+				8594A1611EAB6E9400E5A87C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8594A16D1EAB6E9400E5A87C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8594A1781EAB6E9400E5A87C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8594A1541EAB6E9400E5A87C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8594A1641EAB6E9400E5A87C /* Knock_Poker.xcdatamodeld in Sources */,
+				8594A15E1EAB6E9400E5A87C /* ViewController.swift in Sources */,
+				8594A15C1EAB6E9400E5A87C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8594A16B1EAB6E9400E5A87C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8594A1741EAB6E9400E5A87C /* Knock_PokerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8594A1761EAB6E9400E5A87C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8594A17F1EAB6E9400E5A87C /* Knock_PokerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8594A1711EAB6E9400E5A87C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8594A1571EAB6E9400E5A87C /* Knock Poker */;
+			targetProxy = 8594A1701EAB6E9400E5A87C /* PBXContainerItemProxy */;
+		};
+		8594A17C1EAB6E9400E5A87C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8594A1571EAB6E9400E5A87C /* Knock Poker */;
+			targetProxy = 8594A17B1EAB6E9400E5A87C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8594A15F1EAB6E9400E5A87C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8594A1601EAB6E9400E5A87C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8594A1671EAB6E9400E5A87C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8594A1681EAB6E9400E5A87C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8594A1811EAB6E9400E5A87C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8594A1821EAB6E9400E5A87C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8594A1841EAB6E9400E5A87C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Knock Poker/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tenantsync.Knock-Poker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		8594A1851EAB6E9400E5A87C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Knock Poker/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tenantsync.Knock-Poker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		8594A1871EAB6E9400E5A87C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Knock PokerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tenantsync.Knock-PokerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Knock Poker.app/Knock Poker";
+			};
+			name = Debug;
+		};
+		8594A1881EAB6E9400E5A87C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Knock PokerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tenantsync.Knock-PokerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Knock Poker.app/Knock Poker";
+			};
+			name = Release;
+		};
+		8594A18A1EAB6E9400E5A87C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "Knock PokerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tenantsync.Knock-PokerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Knock Poker";
+			};
+			name = Debug;
+		};
+		8594A18B1EAB6E9400E5A87C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "Knock PokerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tenantsync.Knock-PokerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Knock Poker";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8594A1531EAB6E9400E5A87C /* Build configuration list for PBXProject "Knock Poker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8594A1811EAB6E9400E5A87C /* Debug */,
+				8594A1821EAB6E9400E5A87C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8594A1831EAB6E9400E5A87C /* Build configuration list for PBXNativeTarget "Knock Poker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8594A1841EAB6E9400E5A87C /* Debug */,
+				8594A1851EAB6E9400E5A87C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8594A1861EAB6E9400E5A87C /* Build configuration list for PBXNativeTarget "Knock PokerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8594A1871EAB6E9400E5A87C /* Debug */,
+				8594A1881EAB6E9400E5A87C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8594A1891EAB6E9400E5A87C /* Build configuration list for PBXNativeTarget "Knock PokerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8594A18A1EAB6E9400E5A87C /* Debug */,
+				8594A18B1EAB6E9400E5A87C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8594A1621EAB6E9400E5A87C /* Knock_Poker.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8594A1631EAB6E9400E5A87C /* Knock_Poker.xcdatamodel */,
+			);
+			currentVersion = 8594A1631EAB6E9400E5A87C /* Knock_Poker.xcdatamodel */;
+			path = Knock_Poker.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 8594A1501EAB6E9400E5A87C /* Project object */;
+}
