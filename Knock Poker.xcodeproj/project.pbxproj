@@ -196,6 +196,7 @@
 				TargetAttributes = {
 					8594A1571EAB6E9400E5A87C = {
 						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = R7YWJ76D7W;
 						ProvisioningStyle = Automatic;
 					};
 					8594A16E1EAB6E9400E5A87C = {
@@ -418,6 +419,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = R7YWJ76D7W;
 				INFOPLIST_FILE = "Knock Poker/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tenantsync.Knock-Poker";
@@ -430,6 +432,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = R7YWJ76D7W;
 				INFOPLIST_FILE = "Knock Poker/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tenantsync.Knock-Poker";
@@ -511,6 +514,7 @@
 				8594A1851EAB6E9400E5A87C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8594A1861EAB6E9400E5A87C /* Build configuration list for PBXNativeTarget "Knock PokerTests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +523,7 @@
 				8594A1881EAB6E9400E5A87C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8594A1891EAB6E9400E5A87C /* Build configuration list for PBXNativeTarget "Knock PokerUITests" */ = {
 			isa = XCConfigurationList;
@@ -527,6 +532,7 @@
 				8594A18B1EAB6E9400E5A87C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
