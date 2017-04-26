@@ -103,6 +103,22 @@
                                     <action selector="discardPilePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aTe-5D-e1G"/>
                                 </connections>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="XEy-jO-VxG">
+                                <rect key="frame" x="552" y="28" width="42" height="20.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Players: 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="73y-cF-yFt">
+                                <rect key="frame" x="24" y="346" width="74.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7J3-3c-JNW">
+                                <rect key="frame" x="120" y="347" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -112,15 +128,19 @@
                             <constraint firstItem="xZ9-kg-Kev" firstAttribute="leading" secondItem="LTt-DT-eIL" secondAttribute="trailing" constant="18" id="6vZ-hg-JLl"/>
                             <constraint firstItem="JG6-OL-IIi" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="6xc-OY-7R7"/>
                             <constraint firstItem="gQC-43-jNU" firstAttribute="leading" secondItem="WpU-O4-UAj" secondAttribute="trailing" constant="18" id="92i-xZ-aBH"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="7J3-3c-JNW" secondAttribute="bottom" constant="7" id="B3k-LL-hNV"/>
                             <constraint firstItem="JG6-OL-IIi" firstAttribute="leading" secondItem="Hbu-TT-I7q" secondAttribute="trailing" constant="18" id="Ewt-sF-HuU"/>
                             <constraint firstAttribute="trailing" secondItem="8W5-XP-wEN" secondAttribute="trailing" id="I5p-yx-fE8"/>
                             <constraint firstItem="Hbu-TT-I7q" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Lu7-1S-Ur4"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="xZ9-kg-Kev" secondAttribute="bottom" constant="36" id="OAR-WY-OTV"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="pp2-xG-1lX" secondAttribute="bottom" constant="36" id="Obh-f5-nSX"/>
                             <constraint firstItem="WpU-O4-UAj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Q7c-ve-3ON"/>
+                            <constraint firstItem="73y-cF-yFt" firstAttribute="top" secondItem="WpU-O4-UAj" secondAttribute="bottom" constant="7" id="SpR-ed-SIf"/>
                             <constraint firstItem="8W5-XP-wEN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="WR0-UU-PTc"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="gQC-43-jNU" secondAttribute="bottom" constant="36" id="WoM-fn-H72"/>
+                            <constraint firstItem="7J3-3c-JNW" firstAttribute="leading" secondItem="73y-cF-yFt" secondAttribute="trailing" constant="21.5" id="Ya9-gu-M3Q"/>
                             <constraint firstItem="pp2-xG-1lX" firstAttribute="leading" secondItem="gQC-43-jNU" secondAttribute="trailing" constant="18" id="gah-b6-N11"/>
+                            <constraint firstItem="73y-cF-yFt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="4" id="gpP-cp-TEi"/>
                             <constraint firstItem="Hbu-TT-I7q" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="hhV-KY-gCe"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="LTt-DT-eIL" secondAttribute="bottom" constant="36" id="lqs-Hb-RcA"/>
                         </constraints>
@@ -129,8 +149,11 @@
                         <outlet property="card1" destination="WpU-O4-UAj" id="Ytu-S1-qAH"/>
                         <outlet property="card2" destination="gQC-43-jNU" id="je5-Hn-y5S"/>
                         <outlet property="card3" destination="pp2-xG-1lX" id="ZFs-O6-f8i"/>
+                        <outlet property="card4" destination="LTt-DT-eIL" id="SGB-Cz-IHH"/>
+                        <outlet property="card5" destination="xZ9-kg-Kev" id="lt2-fS-FHR"/>
                         <outlet property="discardPile" destination="JG6-OL-IIi" id="6vK-z3-pTJ"/>
                         <outlet property="drawPile" destination="Hbu-TT-I7q" id="22n-b5-coD"/>
+                        <outlet property="handLabel" destination="7J3-3c-JNW" id="fZ6-Rl-WZu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

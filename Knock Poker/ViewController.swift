@@ -18,14 +18,31 @@ class ViewController: UIViewController {
     @IBOutlet weak var card4: UIButton!
     @IBOutlet weak var card5: UIButton!
     
+    var card1Value: Int = 0
+    var card2Value: Int = 0
+    var card3Value: Int = 0
+    var card4Value: Int = 0
+    var card5Value: Int = 0
     
-    
+    @IBOutlet weak var handLabel: UILabel!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        printCard(cardToPrint: card1, card: 3)
-        printCard(cardToPrint: card2, card: 4)
-        printCard(cardToPrint: card3, card: 5)
+        
+        card1Value = 2
+        card2Value = 14
+        card3Value = 23
+        card4Value = 25
+        card5Value = 11
+        
+        handLabel.text = currentHand()
+        
+        printCard(cardToPrint: card1, card: card1Value)
+        printCard(cardToPrint: card2, card: card2Value)
+        printCard(cardToPrint: card3, card: card3Value)
+        printCard(cardToPrint: card4, card: card4Value)
+        printCard(cardToPrint: card5, card: card5Value)
     }
 
     override func didReceiveMemoryWarning() {
@@ -52,22 +69,182 @@ class ViewController: UIViewController {
     @IBAction func discardPilePressed(_ sender: Any) {
     }
     
-    
+    func currentHand() -> String {
+        var currentHand: [Int] = [card1Value, card2Value, card3Value, card4Value, card5Value]
+        currentHand.sort()
+        var sortValueHand: [Int] = [currentHand[0]%13, currentHand[1]%13, currentHand[2]%13, currentHand[3]%13, currentHand[4]%13]
+        sortValueHand.sort() //Puts cards in order so 4 alike card will be in a row and can have fourcount ==3 when 4 of a kind is reached
+        print("Current Hand: " + String(describing: currentHand))
+        print("Value Hand: " + String(describing: sortValueHand))
+        /////////////////////////
+        //Check for royal flush//
+        /////////////////////////
+        if(currentHand[0]%13 == 0) {
+            //If first card is Ace proceed
+            if(currentHand[1]%13 == 9 && currentHand[1]/14 == currentHand[0]/13) {
+                // Check if next card is a 10 and same suit as ace
+                if(currentHand[2]%13 == 10 && currentHand[2]/14 == currentHand[0]/13) {
+                    // Check if next card is a J and same suit as ace
+                    if(currentHand[3]%13 == 11 && currentHand[3]/14 == currentHand[0]/13) {
+                        // Check if next card is a Q and same suit as ace
+                        print(currentHand[4])
+                        if(currentHand[4]%13 == 12 && currentHand[4]/14 == currentHand[0]/13) {
+                            // Check if next card is a K and same suit as ace
+                            return "Royal Flush"
+                        }
+                    }
+                }
+            }
+        }
+        
+        ////////////////////////////
+        //Check for Straight Flush//
+        ////////////////////////////
+        if(currentHand[0]%13 < 9) {
+            //First card has to be less than 10 because we already checked for royal flush
+            if(currentHand[0]+1 == currentHand[1] && currentHand[1]+1 == currentHand[2] && currentHand[2]+1 == currentHand[3] && currentHand[3]+1 == currentHand[4]) {
+                // High card value will be currentHand[4]
+                return "Straight Flush"
+            }
+        }
+
+        ////////////////////////////
+        //Check for Four of a Kind//
+        ////////////////////////////
+        var fourcount = 0
+        var lastCard = 0
+        for i in 0 ..< sortValueHand.count {
+            if(i>0) {
+                if(lastCard == sortValueHand[i]) {
+                    fourcount += 1
+                    lastCard = sortValueHand[i]
+                }
+            } else {
+                lastCard = sortValueHand[i]
+            }
+        }
+        if(fourcount == 3) {
+            // Will need to return high card value
+            return "Four of a Kind"
+        }
+        
+        ////////////////////////
+        //Check for Full Hour //
+        ////////////////////////
+        if(sortValueHand[0]==sortValueHand[1] && sortValueHand[2] == sortValueHand[3] && sortValueHand[3] == sortValueHand[4]) {
+            return "Full House"
+        }
+        if(sortValueHand[3]==sortValueHand[4] && sortValueHand[0] == sortValueHand[1] && sortValueHand[1] == sortValueHand[2]) {
+            return "Full House"
+        }
+        
+        ////////////////////
+        //Check for Flush //
+        ////////////////////
+        if(currentHand[0]/14 == currentHand[1]/14 && currentHand[1]/14 == currentHand[2]/14 && currentHand[2]/14 == currentHand[3]/14 && currentHand[0]/14 == currentHand[4]/14) {
+            return "Flush"
+        }
+
+        ///////////////////////
+        //Check for Straight //
+        ///////////////////////
+        if(sortValueHand[0]%13 < 9) {
+            //First card has to be less than 10 because we already checked for royal flush
+            if(sortValueHand[0]+1 == sortValueHand[1] && sortValueHand[1]+1 == sortValueHand[2] && sortValueHand[2]+1 == currentHand[3] && sortValueHand[3]+1 == sortValueHand[4]) {
+                return "Straight"
+            }
+        }
+        // Check for 10 - A
+        if(sortValueHand[0] == 0 && sortValueHand[1] == 9 && sortValueHand[2] == 10 && sortValueHand[3] == 11 && sortValueHand[4] == 12) {
+            return "Straight"
+        }
+        
+        //////////////////////////
+        //Check for 3 of a Kind //
+        //////////////////////////
+        var threecount = 0
+        var lastCardThree = 0
+        for i in 0 ..< sortValueHand.count {
+            if(i>0) {
+                if(lastCardThree == sortValueHand[i]) {
+                    threecount += 1
+                    lastCardThree = sortValueHand[i]
+                    if(threecount == 2) {
+                        // Will need to return high card value
+                        return "Three of a Kind"
+                    }
+                }
+                else {
+                    threecount = 0
+                }
+            } else {
+                lastCardThree = sortValueHand[i]
+            }
+        }
+
+        /////////////////////
+        //Check for 2 pair //
+        /////////////////////
+        var twocount = 0
+        var lastCardTwo = 0
+        for i in 0 ..< sortValueHand.count {
+            if(i>0) {
+                if(lastCardTwo == sortValueHand[i]) {
+                    twocount += 1
+                    lastCardTwo = sortValueHand[i]
+                    if(twocount == 2) {
+                        // Will need to return high card value
+                        return "Two of a Kind"
+                    }
+                }
+                else {
+                    lastCardTwo = sortValueHand[i]
+                }
+            } else {
+                lastCardTwo = sortValueHand[i]
+            }
+        }
+        
+        /////////////////////
+        //Check for 1 pair //
+        /////////////////////
+        var paircount = 0
+        var lastCardPair = 0
+        for i in 0 ..< sortValueHand.count {
+            if(i>0) {
+                if(lastCardPair == sortValueHand[i]) {
+                    paircount += 1
+                    lastCardPair = sortValueHand[i]
+                    if(paircount == 1) {
+                        // Will need to return high card value
+                        return "Pair"
+                    }
+                }
+                else {
+                    lastCardPair = sortValueHand[i]
+                }
+            } else {
+                lastCardPair = sortValueHand[i]
+            }
+        }
+        
+        return "High Card"
+    }
     
     
     func printCard(cardToPrint: UIButton, card: Int) {
-        // card/ 13 = suit
+        // card/ 14 = suit
         // 0 is spades
         // 1 is clubs
         // 2 is hearts
         // 3 is diamonds
         // card % 13 = cardValue
-        // 1-10 = A - 10
-        // 11 = J
-        // 12 = Q
-        // 13 = K
-        cardToPrint.setImage(#imageLiteral(resourceName: "K_clubs"), for: UIControlState.normal)
-        switch card {
+        // 0-9 = A - 10
+        // 10 = J
+        // 11 = Q
+        // 12 = K
+        let cardValue = card + 1 // this is because I messed up
+        switch cardValue {
         case 1:
             cardToPrint.setImage(#imageLiteral(resourceName: "A_spades"), for: UIControlState.normal)
         case 2:
